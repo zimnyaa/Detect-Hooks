@@ -15,7 +15,7 @@ void go(char* args, int length) {//Attempts to detect userland hooks by AV/EDR
 	PDWORD functionAddress = (PDWORD)0;
 	
 	//Get ntdll base address
-	HMODULE libraryBase = LoadLibrary("ntdll.dll");
+	HMODULE libraryBase = KERNEL32$LoadLibraryA("ntdll.dll");
 
 	PIMAGE_DOS_HEADER dosHeader = (PIMAGE_DOS_HEADER)libraryBase;
 	PIMAGE_NT_HEADERS imageNTHeaders = (PIMAGE_NT_HEADERS)((DWORD_PTR)libraryBase + dosHeader->e_lfanew);

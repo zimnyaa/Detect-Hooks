@@ -1,0 +1,24 @@
+{
+    "name": "detect-hooks",
+    "version": "0.0.1",
+    "command_name": "detect-hooks",
+    "extension_author": "zimnyaa",
+    "original_author": "anthemtotheego",
+    "repo_url": "https://github.com/sliverarmory/CredManBOF",
+    "help": "Detect userland API hooking",
+    "long_help": "",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+          "os": "windows",  
+          "arch": "amd64",
+          "path": "detect-hooks-mingw64-ll.o"
+        },
+        {
+          "os": "windows",
+          "arch": "386",
+          "path": "detect-hooks-mingw32-ll.o"
+        }
+    ]
+}
