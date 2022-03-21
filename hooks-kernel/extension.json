@@ -1,0 +1,24 @@
+{
+    "name": "hooks-kernel",
+    "version": "0.0.1",
+    "command_name": "hooks-kernel",
+    "extension_author": "zimnyaa",
+    "original_author": "anthemtotheego",
+    "repo_url": "https://github.com/zimnyaa/Detect-Hooks",
+    "help": "Detect userland API hooking (kernel32/kernelbase)",
+    "long_help": "",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+          "os": "windows",  
+          "arch": "amd64",
+          "path": "hooks-kernelx64.o"
+        },
+        {
+          "os": "windows",
+          "arch": "386",
+          "path": "hooks-kernelx64.o"
+        }
+    ]
+}
