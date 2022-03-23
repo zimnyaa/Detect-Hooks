@@ -4,7 +4,7 @@
     "command_name": "detect-hooks",
     "extension_author": "zimnyaa",
     "original_author": "anthemtotheego",
-    "repo_url": "https://github.com/sliverarmory/CredManBOF",
+    "repo_url": "https://github.com/zimnyaa/detect-hooks",
     "help": "Detect userland API hooking",
     "long_help": "",
     "depends_on": "coff-loader",
