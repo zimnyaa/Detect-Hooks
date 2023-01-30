@@ -2,7 +2,7 @@
 
 This is a fork of the `detect-hooks` BOF, rebuilt for sliver.
 
-Also, there's a new BOF, `hooks-kernel`, that uses opcode comparisons instead of syscall stub signatures to find hooks in `kernelbase`/`kernel32`.
+Also, there's a new BOF, `hooks-kernel`, that uses opcode comparisons with lots of false positives instead of syscall stub signatures to find hooks in `kernelbase`/`kernel32`. In this example it looks for `jmp`, but many EDRs use `push+ret` instead.
 
 # sliver BOF porting notes
 
